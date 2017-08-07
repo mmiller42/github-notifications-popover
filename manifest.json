@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Notifications Popover",
+  "description": "Display the GitHub notifications list in a popover instead of navigating to a new page.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*",
+        "*://www.github.com/*"
+      ],
+      "js": [
+        "run.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
