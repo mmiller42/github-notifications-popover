@@ -31,7 +31,7 @@
   }
 
   function getNotifications() {
-    return fetch('/notifications', { credentials: 'include' })
+    return fetch(`/notifications?${Date.now()}`, { credentials: 'include' })
       .then(response => response.text())
       .then(html => {
         const doc = document.implementation.createHTMLDocument()
