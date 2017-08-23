@@ -1,7 +1,7 @@
 ;(() => {
   'use strict'
 
-  const button = document.querySelector('.header .notification-indicator')
+  const button = document.querySelector('.Header .notification-indicator')
   button.classList.add('js-menu-target')
 
   button.addEventListener('click', event => {
